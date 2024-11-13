@@ -1,15 +1,17 @@
 import React from 'react'
 import { images } from '../constants'
 
-export const Header = () => {
+const Header = () => {
   return (
     <section>
-        <Header>
+        <header>
             <div>
                 <img src={images.Logo} alt="logo"/>
             </div>
             <div></div>
-        </Header>
+        </header>
     </section>
-  )
-}
+  );
+};
+
+export default Header;

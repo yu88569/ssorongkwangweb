@@ -1,10 +1,9 @@
-import './App.css';
+import React from 'react';
 import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-blue-500 text-5xl'>sasukrongkwang</h1>
       <HomePage />
     </div>
   );
