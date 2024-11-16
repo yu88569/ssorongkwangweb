@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import path from "path";
+import { fileURLToPath } from "url"; // นำเข้าเพื่อสร้าง __dirname จำลอง
 import connectDB from "./config/db.js";
 import cors from "cors";
 import {
@@ -13,6 +14,10 @@ import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import postCategoriesRoutes from "./routes/postCategoriesRoutes.js";
+
+// สร้าง __dirname จำลอง
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 connectDB();

@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 
 import { images } from "../../../constants";
-//import Search from "../../../components/Search";
-
+import Search from "../../../components/Search";
 
 const Hero = () => {
   return (
@@ -15,7 +14,7 @@ const Hero = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
-        {/* <Search className="mt-10 lg:mt-6 xl:mt-10" /> */}
+        <Search className="mt-10 lg:mt-6 xl:mt-10" />
         <div className="flex mt-4 flex-col lg:flex-row lg:items-start lg:flex-nowrap lg:gap-x-4 lg:mt-7">
           <span className="text-dark-light font-semibold italic mt-2 lg:mt-4 lg:text-sm xl:text-base">
             Popular Tags:
@@ -41,7 +40,7 @@ const Hero = () => {
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
