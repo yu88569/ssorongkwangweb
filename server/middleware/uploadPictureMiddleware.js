@@ -1,5 +1,10 @@
 import multer from "multer";
 import path from "path";
+import { fileURLToPath } from "url";
+
+// สร้าง __dirname จำลองสำหรับ ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -16,7 +21,7 @@ const uploadPicture = multer({
     fileSize: 1 * 1000000, // 1MB
   },
   fileFilter: function (req, file, cb) {
-    let ext = path.extname(file.originalname);
+    let ext = path.extname(file.originalname).toLowerCase();
     if (ext !== ".png" && ext !== ".jpg" && ext !== ".jpeg") {
       return cb(new Error("Only images are allowed"));
     }
