@@ -1,4 +1,5 @@
 import Logo from "../assets/Logo.svg";
+import Logo2 from "../assets/Logo2.png";
 import HeroImage from "../assets/HeroImage.svg";
 import Post1Image from "../assets/posts/post1.jpg";
 import PostProfileImage from "../assets/posts/post-profile.svg";
@@ -8,6 +9,7 @@ const userImage = "/images/user.png";
 
 const images = {
   Logo,
+  Logo2,
   HeroImage,
   Post1Image,
   PostProfileImage,
